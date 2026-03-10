@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RestableDS SMP</title>
+
+<style>
+body{
+  font-family: Arial;
+  background:#1e1e1e;
+  color:white;
+  text-align:center;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+}
+
+.server-box{
+  background:#2b2b2b;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.server-section{
+  margin-top:15px;
+  padding:15px;
+  background:#1a1a1a;
+  border-radius:8px;
+}
+
+img{
+  width:300px;
+  margin:10px;
+  border-radius:8px;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:6px;
+  background:#5865F2;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#4752C4;
+}
+
+.icon{
+  width:64px;
+  margin-bottom:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>RestableDS SMP</h1>
+
+<div class="server-box">
+
+<img class="icon" src="https://api.mcsrvstat.us/icon/restabledsmpp.falix.me:23731">
+
+<p id="status">Checking server...</p>
+<p id="players"></p>
+
+<div class="server-section">
+<h2>Java Edition</h2>
+
+<p><b>Java IP:</b> restabledsmpp.falix.me</p>
+<p><b>Port:</b> 23731</p>
+<p>Cracked: ✅ Enabled</p>
+
+</div>
+
+<div class="server-section">
+<h2>Bedrock Edition</h2>
+
+<p><b>Bedrock IP:</b> restabledsmpp.falix.me</p>
+<p><b>Port:</b> 20047</p>
+
+</div>
+
+<br>
+
+<a href="https://discord.gg/xvejbvuTh7">
+<button>Join our Discord</button>
+</a>
+
+</div>
+
+<h2>Screenshots</h2>
+
+<img src="screenshot1.png">
+<img src="screenshot2.png">
+<img src="screenshot3.png">
+
+</div>
+
+<script>
+
+fetch("https://api.mcsrvstat.us/2/restabledsmpp.falix.me:23731")
+.then(res => res.json())
+.then(data => {
+
+if(data.online){
+
+document.getElementById("status").innerHTML = "Server Status: 🟢 Online";
+
+document.getElementById("players").innerHTML =
+"Players: " + data.players.online + " / " + data.players.max;
+
+}else{
+
+document.getElementById("status").innerHTML = "Server Status: 🔴 Offline";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
