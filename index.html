@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +31,7 @@ nav{
 position:fixed;
 top:0;
 width:100%;
-background:rgba(10,10,20,0.7);
+background:rgba(10,10,20,0.8);
 backdrop-filter:blur(10px);
 padding:15px 40px;
 display:flex;
@@ -117,6 +118,7 @@ padding:25px;
 backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,0.1);
 transition:0.3s;
+text-align:center;
 }
 
 .card:hover{
@@ -224,20 +226,6 @@ background:#020617;
 opacity:0.7;
 }
 
-/* MOBILE */
-
-@media(max-width:700px){
-
-.hero h2{
-font-size:40px;
-}
-
-nav{
-padding:10px 20px;
-}
-
-}
-
 </style>
 </head>
 
@@ -327,38 +315,104 @@ padding:10px 20px;
 
 </div>
 
-<h2 id="shop" style="margin-top:60px">Server Shop</h2>
+<h2 id="shop" style="margin-top:70px">Server Shop</h2>
+
+<p style="opacity:0.8;margin-top:10px">
+Purchase items through our Discord server.
+</p>
+
+<a href="https://discord.gg/xvejbvuTh7" class="copy" style="margin-top:15px;display:inline-block;text-decoration:none">
+Open Discord Shop
+</a>
+
+<h3 style="margin-top:50px">Crate Keys</h3>
 
 <div class="shop-grid">
 
 <div class="shop-item">
-<h3>Rare Keys</h3>
-<p>2x</p>
+<img src="Key.png" width="70">
+<h3>2x Rare Keys</h3>
 <p class="price">15 PHP</p>
 </div>
 
 <div class="shop-item">
-<h3>Legendary Keys</h3>
-<p>2x</p>
+<img src="Key.png" width="70">
+<h3>2x Legendary Keys</h3>
 <p class="price">30 PHP</p>
 </div>
 
 <div class="shop-item">
-<h3>Cursed Keys</h3>
-<p>2x</p>
+<img src="Key.png" width="70">
+<h3>2x Cursed Keys</h3>
+<p>Limited Time</p>
 <p class="price">50 PHP</p>
 </div>
 
 <div class="shop-item">
-<h3>VIP Rank</h3>
-<p>Permanent</p>
+<img src="Key.png" width="70">
+<h3>2x Egg Keys</h3>
+<p class="price">25 PHP</p>
+</div>
+
+<div class="shop-item">
+<img src="Key.png" width="70">
+<h3>2x Key Crate Keys</h3>
+<p class="price">25 PHP</p>
+</div>
+
+</div>
+
+<h3 style="margin-top:60px">In-Game Ranks</h3>
+
+<div class="shop-grid">
+
+<div class="shop-item">
+<h3 style="color:#22c55e">Supporter</h3>
+<p class="price">25 PHP</p>
+</div>
+
+<div class="shop-item">
+<h3 style="color:#38bdf8">Donator</h3>
+<p class="price">50 PHP</p>
+</div>
+
+<div class="shop-item">
+<h3 style="color:#a855f7">VIP</h3>
 <p class="price">75 PHP</p>
 </div>
 
 <div class="shop-item">
-<h3>MVP Rank</h3>
-<p>Permanent</p>
+<h3 style="color:#eab308">Royal</h3>
+<p class="price">100 PHP</p>
+</div>
+
+<div class="shop-item">
+<h3 style="color:#f97316">MVP</h3>
 <p class="price">150 PHP</p>
+</div>
+
+<div class="shop-item">
+<h3 style="color:#ec4899">Plasma</h3>
+<p class="price">200 PHP</p>
+</div>
+
+<div class="shop-item">
+<h3 style="background:linear-gradient(90deg,yellow,orange);-webkit-background-clip:text;color:transparent">
+Sunshine
+</h3>
+<p class="price">350 PHP</p>
+</div>
+
+<div class="shop-item">
+<h3 style="color:#ef4444">Pirate</h3>
+<p class="price">400 PHP</p>
+</div>
+
+<div class="shop-item">
+<h3 style="background:linear-gradient(90deg,#22c55e,#6366f1,#ec4899);-webkit-background-clip:text;color:transparent">
+Godly
+</h3>
+<p class="price">500 PHP</p>
 </div>
 
 </div>
@@ -416,10 +470,10 @@ document.getElementById("statusText").innerHTML="⚠ Could not check server"
 }
 
 updateServer()
-
 setInterval(updateServer,30000)
 
 </script>
 
 </body>
 </html>
+```
